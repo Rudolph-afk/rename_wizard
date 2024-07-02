@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve file renaming web application
+After=network.target
+
+[Service]
+User=daemon
+Group=daemon
+WorkingDirectory=/tools/rename_wizard/
+#EnvironmentFile=/etc/systemd/system/analysisapp.service.d/analysisapp.conf
+ExecStart=/tools/conda/envs/dashboad/bin/gunicorn --config gunicorn_config.py app:server
+
+[Install]
+WantedBy=multi-user.target

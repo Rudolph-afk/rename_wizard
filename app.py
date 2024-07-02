@@ -75,7 +75,7 @@ app.layout = dmc.MantineProvider(
                 type="reset",
                 outline=True,
                 color="dark",
-                href="/rename",
+                href="/rename/",
                 external_link=True
             )
         ],

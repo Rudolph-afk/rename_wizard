@@ -1,2 +1,5 @@
 # VSCode Stuff
 .vscode/
+
+# Python
+__pycache__/
